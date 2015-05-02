@@ -15,6 +15,7 @@
 		26692D391AF4F0E6007265AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26692D371AF4F0E6007265AE /* LaunchScreen.xib */; };
 		26692D451AF4F0E6007265AE /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26692D441AF4F0E6007265AE /* testTests.m */; };
 		26692D501AF4FF73007265AE /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26692D4F1AF4FF73007265AE /* AnotherViewController.m */; };
+		26692D531AF50617007265AE /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26692D521AF50617007265AE /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		26692D441AF4F0E6007265AE /* testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
 		26692D4E1AF4FF73007265AE /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		26692D4F1AF4FF73007265AE /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		26692D511AF50617007265AE /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		26692D521AF50617007265AE /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				26692D301AF4F0E6007265AE /* ViewController.m */,
 				26692D4E1AF4FF73007265AE /* AnotherViewController.h */,
 				26692D4F1AF4FF73007265AE /* AnotherViewController.m */,
+				26692D511AF50617007265AE /* EditViewController.h */,
+				26692D521AF50617007265AE /* EditViewController.m */,
 				26692D321AF4F0E6007265AE /* Main.storyboard */,
 				26692D351AF4F0E6007265AE /* Images.xcassets */,
 				26692D371AF4F0E6007265AE /* LaunchScreen.xib */,
@@ -228,6 +233,7 @@
 				26692D2E1AF4F0E6007265AE /* AppDelegate.m in Sources */,
 				26692D501AF4FF73007265AE /* AnotherViewController.m in Sources */,
 				26692D2B1AF4F0E6007265AE /* main.m in Sources */,
+				26692D531AF50617007265AE /* EditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

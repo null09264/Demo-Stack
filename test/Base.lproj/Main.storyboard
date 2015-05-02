@@ -20,12 +20,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuA-rp-CRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-73" y="429"/>
+            <point key="canvasLocation" x="-97" y="398"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -71,10 +71,49 @@
             </objects>
             <point key="canvasLocation" x="357" y="398"/>
         </scene>
-        <!--Another View Controller-->
+        <!--Edit-->
+        <scene sceneID="kOd-13-DmL">
+            <objects>
+                <viewController storyboardIdentifier="EditViewController" title="Edit" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xcj-PY-moO" customClass="EditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="alR-qk-cmo"/>
+                        <viewControllerLayoutGuide type="bottom" id="NDk-qi-m79"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6sh-3d-IUx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obx-z4-HAI">
+                                <rect key="frame" x="69" y="104" width="183" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keY-gs-Ipg">
+                                <rect key="frame" x="143" y="161" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveData:" destination="xcj-PY-moO" eventType="touchUpInside" id="yW3-Gg-Jbg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="textField" destination="obx-z4-HAI" id="7E1-3d-bsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tcs-Ck-d1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="1111"/>
+        </scene>
+        <!--List-->
         <scene sceneID="kjZ-YI-0AR">
             <objects>
-                <viewController id="8HG-Sb-z1E" customClass="AnotherViewController" sceneMemberID="viewController">
+                <viewController title="List" id="8HG-Sb-z1E" customClass="AnotherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ych-Qe-hun"/>
                         <viewControllerLayoutGuide type="bottom" id="Vkp-Y8-TtY"/>
