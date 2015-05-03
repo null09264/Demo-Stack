@@ -9,6 +9,10 @@
 #import "AnotherViewController.h"
 #import "EditViewController.h"
 
+@interface AnotherViewController ()
+@property (nonatomic, strong) IBOutlet UIView *textFieldContainer;
+@end
+
 @implementation AnotherViewController
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -38,13 +42,17 @@
 }
 
 - (void) viewWillDisappear:(BOOL)animated {
-	[self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+	[self.textFieldContainer.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
+- (IBAction) dismissViewController: (UIButton *) sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void) editButtonDidClicked: (UIButton *) button {
 	EditViewController *viewController = [EditViewController getInstanceWithTag:button.tag];
-	[self.navigationController pushViewController:viewController animated:YES];
+//	[self.navigationController pushViewController:viewController animated:YES];
+	[self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

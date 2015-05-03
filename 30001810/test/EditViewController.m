@@ -38,5 +38,8 @@
 	[[NSUserDefaults standardUserDefaults]setObject:self.data forKey:@"DATA"];
 }
 
+- (IBAction) dismissViewController: (UIButton *) sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
